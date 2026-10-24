@@ -1,0 +1,49 @@
+{
+  "model_name": "churn_pipeline",
+  "model_version": "1.0.0",
+  "trained_at": "2026-10-24T12:20:59",
+  "python_version": "3.13.14",
+  "sklearn_version": "1.9.1",
+  "numpy_version": "2.5.3",
+  "features": {
+    "numeric": [
+      "tenure_months",
+      "monthly_fee",
+      "support_calls"
+    ],
+    "categorical": [
+      "contract",
+      "payment"
+    ]
+  },
+  "allowed_categories": {
+    "contract": [
+      "monthly",
+      "two-year",
+      "yearly"
+    ],
+    "payment": [
+      "card",
+      "e-wallet",
+      "transfer"
+    ]
+  },
+  "metrics": {
+    "cv_roc_auc": 0.7493,
+    "test_roc_auc": 0.7489
+  },
+  "training_stats": {
+    "tenure_months": {
+      "mean": 36.21,
+      "std": 20.62
+    },
+    "monthly_fee": {
+      "mean": 150220.86,
+      "std": 39686.26
+    },
+    "support_calls": {
+      "mean": 1.52,
+      "std": 1.27
+    }
+  }
+}
